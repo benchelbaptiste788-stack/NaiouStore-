@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NaiouStore | Boutique en ligne</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#fff9fd;color:#30243a}
+header{background:#7136b8;color:white;padding:20px;text-align:center}
+header h1{margin:0;font-size:29px;letter-spacing:2px}
+header p{margin:7px 0 0;color:#ffd8eb}
+nav{display:flex;justify-content:center;gap:20px;padding:15px;background:white;flex-wrap:wrap}
+nav a{color:#7136b8;text-decoration:none;font-weight:bold}
+.hero{text-align:center;padding:55px 20px;background:linear-gradient(135deg,#7136b8,#e98ab9);color:white}
+.hero h2{font-size:32px;margin:0 0 15px}
+.hero p{line-height:1.6}
+.btn{display:inline-block;background:#f28ab8;color:#38152b;padding:13px 23px;border-radius:25px;text-decoration:none;font-weight:bold;margin:8px}
+section{padding:35px 18px;text-align:center}
+h2{color:#7136b8}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:white;padding:22px 12px;border-radius:15px;box-shadow:0 3px 12px #7136b820}
+.card h3{color:#7136b8}
+.card p{font-size:14px;line-height:1.5}
+form{max-width:500px;margin:auto;text-align:left;background:white;padding:20px;border-radius:15px;box-shadow:0 3px 12px #7136b820}
+label{display:block;margin:13px 0 6px;font-weight:bold}
+input,select,textarea{width:100%;padding:12px;border:1px solid #dfc9e9;border-radius:8px;font-size:15px}
+button{width:100%;padding:14px;background:#7136b8;color:white;border:0;border-radius:9px;font-size:16px;font-weight:bold;margin-top:18px}
+footer{background:#7136b8;color:white;text-align:center;padding:25px}
+@media(max-width:350px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+<h1>NAIOUSTORE</h1>
+<p>SHOP • ORDER • RECEIVE</p>
+</header>
+
+<nav>
+<a href="#home">Accueil</a>
+<a href="#services">Services</a>
+<a href="#commande">Commander</a>
+</nav>
+
+<div class="hero" id="home">
+<h2>Bienvenue chez NaiouStore !</h2>
+<p>Votre shopping devient plus simple.<br>
+Commandez vos produits préférés depuis chez vous.</p>
+<a class="btn" href="#commande">Passer une commande</a>
+</div>
+
+<section id="services">
+<h2>Nos services</h2>
+<div class="cards">
+<div class="card">
+<h3>💜 SHEIN</h3>
+<p>Envoyez-nous les liens des produits que vous souhaitez acheter sur SHEIN.</p>
+<a class="btn" href="#commande">Commander</a>
+</div>
+<div class="card">
+<h3>🌸 TEMU</h3>
+<p>Choisissez vos articles sur TEMU et transmettez-nous votre commande.</p>
+<a class="btn" href="#commande">Commander</a>
+</div>
+<div class="card">
+<h3>🛍️ Boutique</h3>
+<p>Découvrez les produits disponibles dans notre boutique.</p>
+</div>
+<div class="card">
+<h3>🚚 Livraison</h3>
+<p>Suivez les informations concernant la réception de vos commandes.</p>
+</div>
+</div>
+</section>
+
+<section id="commande">
+<h2>Formulaire de commande</h2>
+<p>Remplissez vos informations pour préparer votre demande.</p>
+<form>
+<label>Nom complet</label>
+<input type="text" placeholder="Votre nom" required>
+
+<label>Téléphone / WhatsApp</label>
+<input type="tel" placeholder="Votre numéro" required>
+
+<label>Site d'achat</label>
+<select required>
+<option value="">Choisir un site</option>
+<option>SHEIN</option>
+<option>TEMU</option>
+<option>Autre</option>
+</select>
+
+<label>Lien du produit</label>
+<input type="url" placeholder="Coller le lien du produit">
+
+<label>Couleur et taille</label>
+<input type="text" placeholder="Votre choix">
+
+<label>Quantité</label>
+<input type="number" min="1" value="1">
+
+<label>Informations supplémentaires</label>
+<textarea rows="4" placeholder="Autres détails"></textarea>
+
+<button type="button" onclick="alert('Merci ! Le formulaire est une première maquette. La réception réelle des commandes sera connectée dans la prochaine étape.')">Préparer ma commande</button>
+</form>
+</section>
+
+<footer>
+<h3>NAIOUSTORE 💜🌸</h3>
+<p>Votre partenaire shopping en ligne.</p>
+<p>© 2026 NaiouStore. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
